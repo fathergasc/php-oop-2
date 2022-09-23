@@ -27,7 +27,7 @@ var_dump($user1);
 
 $employee1 = new Employee('Web Developer Junior','Andrea', 'Quaglioni', 'fathergasc', '9876');
 try {
-    $user1->setAddress('via Napoli 24, Bologna');
+    $employee1->setAddress('via Napoli 24, Bologna');
 } catch (Exception $e) {
     echo "Errore: " . $e->getMessage();
 }
@@ -36,7 +36,7 @@ var_dump($employee1);
 
 $houseForRent1 = new HouseForRent('800€/mese','Appartamento', '120', '1', '6', '2', '1');
 try {
-    $user1->setAddress('via Rizzoli 28, Bologna');
+    $houseForRent1->setAddress('via Rizzoli 28, Bologna');
 } catch (Exception $e) {
     echo "Errore: " . $e->getMessage();
 }
@@ -45,7 +45,7 @@ var_dump($houseForRent1);
 
 $houseForSale1 = new HouseForSale('300.000€','Villetta a Schiera', '140', '2', '9', '3', '2');
 try {
-    $user1->setAddress('via Bruno 28, Bologna');
+    $houseForSale1->setAddress('via Bruno 28, Bologna');
 } catch (Exception $e) {
     echo "Errore: " . $e->getMessage();
 }
