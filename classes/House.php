@@ -2,7 +2,8 @@
 
 require_once __DIR__ . '/../traits/Address.php';
 
-class House {
+class House
+{
 
     use Address;
 
@@ -11,7 +12,7 @@ class House {
     public $floors;
     public $rooms;
     public $numberOfBedrooms;
-    public $numberOfBathrooms; 
+    public $numberOfBathrooms;
 
     public function __construct($type, $squareMeters, $floors, $rooms, $numberOfBedrooms, $numberOfBathrooms)
     {

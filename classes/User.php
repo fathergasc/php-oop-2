@@ -2,14 +2,15 @@
 
 require_once __DIR__ . '/../traits/Address.php';
 
-class User {
+class User
+{
 
     use Address;
 
     public $name;
     public $lastname;
     public $username;
-    public $password;
+    protected $password;
     public $accessLevel;
 
     public function __construct($name, $lastname, $username, $password, $accessLevel = 'user')

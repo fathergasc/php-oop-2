@@ -2,7 +2,8 @@
 
 require_once __DIR__ . './House.php';
 
-class HouseForSale extends House {
+class HouseForSale extends House
+{
 
     public $buyingPrice;
 
@@ -11,6 +12,4 @@ class HouseForSale extends House {
         parent::__construct($type, $squareMeters, $floors, $rooms, $numberOfBedrooms, $numberOfBathrooms);
         $this->buyingPrice = $buyingPrice;
     }
-
-    
 }

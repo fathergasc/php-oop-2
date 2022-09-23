@@ -2,7 +2,8 @@
 
 require_once __DIR__ . './House.php';
 
-class HouseForRent extends House {
+class HouseForRent extends House
+{
 
     public $rentPrice;
 
@@ -11,6 +12,4 @@ class HouseForRent extends House {
         parent::__construct($type, $squareMeters, $floors, $rooms, $numberOfBedrooms, $numberOfBathrooms);
         $this->rentPrice = $rentPrice;
     }
-
-    
 }
